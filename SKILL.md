@@ -42,3 +42,4 @@ metadata:
 ## Resources
 
 - `references/expression-coding.md` — 完整提示词指令：四要素正文（可直接复制给 AI）+ 表情编码速查表 + 翻车↔正写对照 + 引擎适配与 negative prompt + 与参考图垫图协同 + 强度↔时长换算表 + 生理细节元件 + 补充示例（喜悦/惊讶/恐惧）+ 合格判定标准（8 项）
+- `references/smoke-expression-grief.md` — **行为冒烟示例（等级 2）**：林夏悲伤 I3→I7 跨 3 镜渐变编码，跑通表情编码表→逐镜提示词(onset/apex)→合格判定 8 项，附可直接复制提示词。
