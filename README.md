@@ -35,15 +35,19 @@
 - 角色表情基线卡（每角色一张）
 - 逐镜表情编码 + 可直接复制的提示词
 - 跨镜头一致性方案（锚点图垫图 + 固定描述段）
+- 表情资产哈希登记（出"表情参考图组"时，用 `scripts/asset_hash.py` 锁死参考图指纹，防偷换 / 损坏）
 
 ## 目录结构
 
 ```text
 shiyiagi-facial-expression/
 ├── SKILL.md
+├── scripts/
+│   └── asset_hash.py             # 表情资产哈希登记/比对（防参考图被偷换/损坏）
 └── references/
     ├── expression-coding.md      # 完整编码体系 + 四要素正文 + 速查表 + 合格判定 8 项
-    └── smoke-expression-grief.md # 端到端示例（林夏悲伤 I3→I7 跨 3 镜）
+    ├── smoke-expression-grief.md # 端到端示例（林夏悲伤 I3→I7 跨 3 镜）
+    └── asset-hash.md             # 表情资产哈希登记与比对说明
 ```
 
 ## 怎么用
@@ -73,7 +77,7 @@ npx -y skills add shiyi-TNT-SOS/shiyiagi-facial-expression -g --all
 
 ## 版本与授权
 
-- 版本：`1.0.0`
+- 版本：`1.1.0`
 - 授权：MIT（见 SKILL.md frontmatter）。学习与**非商业**用途可自由使用；商用请先联系作者授权。
 - 作者：柳十一（十一AGI认知圈）
 
